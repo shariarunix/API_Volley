@@ -1,13 +1,14 @@
 package com.shariarunix.apivolley;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class ProductModel {
+public class ProductModel implements Serializable {
 
-    int id, price, stock;
-    double discountPercentage, rating;
-    String title, description, brand, category, thumbnail;
-    List<String> images;
+    private int id, price, stock;
+    private double discountPercentage, rating;
+    private String title, description, brand, category, thumbnail;
+    private List<String> images;
 
     public ProductModel(
             int id,
